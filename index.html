@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Formularz oceny sztucznych słów</title>
+    <meta charset="utf-8"/>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        background: #9900ff;
+        background: linear-gradient(30deg, #9900ff, #cc80ff );
+        font-family: sans;
+        font-size: 16px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      div.containersContainer {
+        background: #fafafa;
+        background: linear-gradient(30deg, #fafafa, #ffffff );
+        width: 50%;
+        margin: 20px auto;
+        padding: 16px;
+        border: none;
+        text-align: justify;
+      }
+      div.textContainer {
+        margin: 36px auto;
+        text-align: justify;
+      }
+      div.buttonContainer {
+        text-align: center;
+      }
+      .myButton {
+        display: inline-block;
+        height: 64px;
+        padding: 16px 32px 16px 32px;
+        border-radius: 15px;
+        background-color: rgb(255, 80, 90);
+        border: none;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function randomlinks(){
+          var myrandom=Math.round(Math.random()*15)
+          window.last_random = myrandom
+          var links=new Array()
+          links[0]  = "https://docs.google.com/forms/d/e/1FAIpQLSd3SiX24WPcRT3VkndxbvgN21aDMNI8vSOE2hBs56grN5Mx4A/viewform"
+          links[1]  = "https://docs.google.com/forms/d/e/1FAIpQLSf_mB5D2GQsjLqd149bvp9ehHuWLDyui4mhKhtVxl8UKAIyuQ/viewform"
+          links[2]  = "https://docs.google.com/forms/d/e/1FAIpQLSe6leUWEaXLvT48AvykkVqt_CCuyAZlYrVkd_L9kWNPC9m00Q/viewform"
+          links[3]  = "https://docs.google.com/forms/d/e/1FAIpQLSfIlgcLRPtbNh3Wj2NTi2cPe8vg2ubIbZ65UkzFwiWEHi9z4w/viewform"
+          links[4]  = "https://docs.google.com/forms/d/e/1FAIpQLSfWnruiDhPJ1CJnt0ATeOr71THvbtYvYwlYiyIVEcq9JEDhww/viewform"
+          links[5]  = "https://docs.google.com/forms/d/e/1FAIpQLSe6ocFaZrgQ7drnOTdEb56DSBenJzmz56U1TprUjMXz4PPlFw/viewform"
+          links[6]  = "https://docs.google.com/forms/d/e/1FAIpQLSdX0I2i8RtxbWLc4LjK4haG7XrbrgsiAIiVTqOAf9R7NLdwYQ/viewform"
+          links[7]  = "https://docs.google.com/forms/d/e/1FAIpQLSfzHZOkw64MMUyJEw_Y-dYmGzXn-xkF5wRz6q_w22NUJWqAHQ/viewform"
+          links[8]  = "https://docs.google.com/forms/d/e/1FAIpQLSeJrajRcC1hMOjzAaf4WXgFyDTrvAqO1ixiotsVUp0fsM8s2g/viewform"
+          links[9]  = "https://docs.google.com/forms/d/e/1FAIpQLSeO-MqMwqv8zdwVCveGYkrJiuG3rZZlWcUUuZpcg80eokpH8A/viewform"
+          links[10] = "https://docs.google.com/forms/d/e/1FAIpQLSe9HgcatI_cgBKe5qE98orqdzZ4hjk9s4qh2PH9Ur24FzQB0A/viewform"
+          links[11] = "https://docs.google.com/forms/d/e/1FAIpQLSdhWlidspsbM4Rr6GWuf2s6Y9vFFqnGAo2w6y1Wa4ZtphrSCg/viewform"
+          links[12] = "https://docs.google.com/forms/d/e/1FAIpQLSdNlCOdrYUg3-t1JOBM9vHbhgWJRGoiSiNHIeVKq9O9GfD4Iw/viewform"
+          links[13] = "https://docs.google.com/forms/d/e/1FAIpQLSfPhM2qb_kV2Ovxt_9gU-TdRLCHtnF2tCtQaPi1jzjT5VWQpA/viewform"
+          links[14] = "https://docs.google.com/forms/d/e/1FAIpQLSdtrYvl_urGHDUk1ydUn94dvBQlo5Ggy5y8cWQp-ymhjy_kNg/viewform"
+          links[15] = "https://docs.google.com/forms/d/e/1FAIpQLSd354kDbF5NCeDd6iUEpN6P-GzIlkULjttYCRs2xcpA6-oVSw/viewform"
+          window.location=links[myrandom]
+      }
+    </script>
+  </head>
+  <body>
+  <div class="containersContainer">
+    <div class="textContainer" >
+      Dziękujemy za chęć wzięcia udziału w naszym badaniu!
+      Poniżej znajduje się link do formularza dotyczącego
+      postrzegania wyrazów, które nie istnieją w języku polskim,
+      tzw. "sztucznych słów".
+    </div>
+    <div class="buttonContainer" >
+      <input  onClick="randomlinks()" type="button" class="myButton" value="Przejdź do formularza!" />
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+</body>
+</html>
