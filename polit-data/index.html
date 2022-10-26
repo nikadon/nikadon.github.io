@@ -3,11 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-10-26 Wed 17:18 -->
+<!-- 2022-10-26 Wed 17:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>PolitData</title>
-<meta name="author" content="nikadon" />
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -193,31 +192,43 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">PolitData</h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#org9789d4c">1. Interactive figures:</a></li>
-<li><a href="#org35061a8">2. General info</a></li>
-</ul>
-</div>
-</div>
 
-<div id="outline-container-org9789d4c" class="outline-2">
-<h2 id="org9789d4c"><span class="section-number-2">1.</span> Interactive figures:</h2>
+<div id="outline-container-org2bcbbf2" class="outline-2">
+<h2 id="org2bcbbf2"><span class="section-number-2">1.</span> Interactive figures:</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li><a href="./scatter_test_GAUSS.html">./scatter_test_GAUSS.html</a> (filtered see this first)</li>
-<li><a href="./scatter_test_DAILY.html">./scatter_test_DAILY.html</a></li>
+<li><a href="https://nikadon.github.io/polit-data/scatter_test_GAUSS.html">GAUSS</a> (smoothed/filtered see this first)</li>
+<li><a href="https://nikadon.github.io/polit-data/scatter_test_DAILY.html">DAILY</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org35061a8" class="outline-2">
-<h2 id="org35061a8"><span class="section-number-2">2.</span> General info</h2>
+<div id="outline-container-org4a1c2af" class="outline-2">
+<h2 id="org4a1c2af"><span class="section-number-2">2.</span> General info</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>Text features extracted from tweets included:
@@ -258,14 +269,14 @@ provided as semi transparent area around mean.</li>
 <li>Except for the <code>ALL</code> dataset, the following ``sane&rsquo;&rsquo; contrasts were used for
 graphical comparisons of sub-dataset timeseries were produced:
 <ul class="org-ul">
-<li><code>Democrat</code> VS <code>Republican</code></li>
-<li><code>winner</code> VS <code>loser</code></li>
-<li><code>Democrat_winner</code> VS <code>Democrat_loser</code></li>
-<li><code>Republican_winner</code> VS <code>Republican_loser</code></li>
-<li><code>Democrat_winner</code> VS <code>Republican_winner</code></li>
-<li><code>Democrat_loser</code> VS <code>Republican_loser</code></li>
-<li><code>Democrat_winner</code> VS <code>Republican_loser</code></li>
-<li><code>Democrat_loser</code> VS <code>Republican_winner</code></li>
+<li><code>Democrat</code> vs. <code>Republican</code></li>
+<li><code>winner</code> vs. <code>loser</code></li>
+<li><code>Democrat_winner</code> vs. <code>Democrat_loser</code></li>
+<li><code>Republican_winner</code> vs. <code>Republican_loser</code></li>
+<li><code>Democrat_winner</code> vs. <code>Republican_winner</code></li>
+<li><code>Democrat_loser</code> vs. <code>Republican_loser</code></li>
+<li><code>Democrat_winner</code> vs. <code>Republican_loser</code></li>
+<li><code>Democrat_loser</code> vs. <code>Republican_winner</code></li>
 </ul></li>
 <li>Second, an additional sub-datasets were created by smoothing the daily-averaged data
 using rolling average with Gaussian filter (window=28 days, std=14 days).</li>
@@ -279,12 +290,25 @@ and eight ``sane&rsquo;&rsquo; comparisons.</li>
 clicking on their name (double click toggles on or off the display of all features).</li>
 <li>Comparisons are selected using the dropdown menu in the top-right corner of the figure.</li>
 </ul>
+<p>
+\newpage{}
+</p>
+<ul class="org-ul">
+<li>This is how it should look in (modern) browser
+<ul class="org-ul">
+<li><img src="./scatter_test_GAUSS_sample_001.png" alt="scatter_test_GAUSS_sample_001.png" /></li>
+</ul></li>
+<li>This is how it should look in (modern) browser
+<ul class="org-ul">
+<li><img src="./scatter_test_GAUSS_sample_002.png" alt="scatter_test_GAUSS_sample_002.png" /></li>
+</ul></li>
+<li>This is how it should look in (modern) browser</li>
+</ul>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: nikadon</p>
-<p class="date">Created: 2022-10-26 Wed 17:18</p>
+<p class="date">Created: 2022-10-26 Wed 17:29</p>
 </div>
 </body>
 </html>
